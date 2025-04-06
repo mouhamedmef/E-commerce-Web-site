@@ -1,0 +1,15 @@
+.section-heading-section-heading {
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-bottom: var(--dl-layout-space-threeunits);
+  flex-direction: column;
+}
+ 
+.section-heading-text {
+  color: var(--dl-color-gray-black60);
+  text-align: center;
+  line-height: 24px;
+}
+ 
+
