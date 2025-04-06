@@ -1,31 +1,15 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "app.py",
-        "use": "@vercel/python"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/static/(.*)",
-        "dest": "/static/$1"
-      },
-      {
-        "src": "/Beauty",
-        "dest": "/app.py"
-      },
-      {
-        "src": "/dummyjson/products",
-        "dest": "/app.py"
-      },
-      {
-        "src": "/dummyjson/products/(?<product_id>.*)",
-        "dest": "/app.py"
-      },
-      {
-        "src": "/",
-        "dest": "/app.py"
-      }
-    ]
-  }
+  "version": 2,
+  "builds": [
+    {
+      "src": "app.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "app.py"
+    }
+  ]
+}
